@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import resumePdf from '../assets/Muganza Ainda 09.02.2026 (EN).pdf';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,9 +55,13 @@ const Navbar: React.FC = () => {
           
           <div className="h-4 w-[1px] bg-white/10"></div>
           
-          <a href="#contact" className="group relative px-6 py-3 bg-emerald text-navy font-black uppercase text-[10px] tracking-widest overflow-hidden transition-all duration-300 hover:text-white">
+          <a
+            href={resumePdf}
+            download="Muganza-Ainda-Resume.pdf"
+            className="group relative px-6 py-3 bg-emerald text-navy font-black uppercase text-[10px] tracking-widest overflow-hidden transition-all duration-300 hover:text-white"
+          >
             <span className="relative z-10 flex items-center gap-2">
-              Inquiry <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+              Resume <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-navy -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div>
           </a>
@@ -92,12 +97,13 @@ const Navbar: React.FC = () => {
           </div>
           
           <div className="mt-12 pt-12 border-t border-white/10 w-full max-w-sm">
-             <a 
-               href="#contact" 
+             <a
+               href={resumePdf}
+               download="Muganza-Ainda-Resume.pdf"
                onClick={() => setIsMenuOpen(false)}
                className="inline-flex items-center gap-4 text-emerald font-black uppercase tracking-[0.3em] text-xs group"
              >
-               Start a Consultation <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
+               Download Resume <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
              </a>
              <div className="mt-8 flex gap-6">
                 <span className="text-[10px] font-black text-white/20 uppercase tracking-widest">EN</span>

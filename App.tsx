@@ -4,6 +4,7 @@ import emailjs from 'https://esm.sh/@emailjs/browser';
 import Navbar from './components/Navbar';
 import SectionWrapper from './components/SectionWrapper';
 import meImage from './assets/me.jpeg';
+import resumePdf from './assets/Muganza Ainda 09.02.2026 (EN).pdf';
 import { CORE_VALUES, EXPERIENCE, TECH_STACK, LANGUAGES, INTERESTS, CASE_STUDIES } from './constants';
 import { 
   Send, MapPin, Linkedin, Mail, Download, ExternalLink, ChevronDown, CheckCircle2, 
@@ -742,7 +743,9 @@ const App: React.FC = () => {
             <div className="bg-white/[0.03] p-6 border border-white/5">
               <h4 className="heading-font text-[9px] font-black uppercase text-white tracking-widest mb-4">Credentials</h4>
               <p className="text-white/40 text-[9px] font-medium leading-relaxed mb-6 uppercase tracking-widest">Access my full professional profile and trilingual dossier.</p>
-              <button 
+              <a
+                href={resumePdf}
+                download="Muganza-Ainda-Resume.pdf"
                 onMouseEnter={() => setDownloadHovered(true)}
                 onMouseLeave={() => setDownloadHovered(false)}
                 className="w-full py-3 border border-emerald text-emerald font-black uppercase tracking-widest text-[8px] hover:bg-emerald hover:text-navy transition-all flex items-center justify-center gap-2 overflow-hidden relative"
@@ -751,7 +754,7 @@ const App: React.FC = () => {
                 <span className={`transition-transform duration-300 ${downloadHovered ? '-translate-y-12' : 'translate-y-0'}`}>Download Briefing</span>
                 <span className={`absolute transition-transform duration-300 ${downloadHovered ? 'translate-y-0' : 'translate-y-12'}`}>Get Technical Dossier</span>
                 {!downloadHovered && <Download size={12} />}
-              </button>
+              </a>
             </div>
           </div>
           <div className="pt-12 border-t border-white/5 text-center md:text-left">
