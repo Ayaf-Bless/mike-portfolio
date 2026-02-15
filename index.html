@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike Muganza | Operations & Project Support Professional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#1A2238',
+              slate: '#37474F',
+              emerald: '#00897B',
+              'off-white': '#F8F9FA',
+            },
+            fontFamily: {
+              heading: ['Montserrat', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 1.2s ease-out forwards',
+              'fade-in-up': 'fadeInUp 1.2s ease-out 0.3s forwards',
+              'float-slow': 'float 6s ease-in-out infinite',
+              'float-delayed': 'float 8s ease-in-out 1s infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              scan: {
+                '0%': { top: '-30vh' },
+                '100%': { top: '100%' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #F8F9FA;
+        color: #37474F;
+      }
+      .heading-font {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .animate-fade-in { opacity: 0; }
+      .animate-fade-in-up { opacity: 0; }
+      
+      @keyframes scan {
+        from { transform: translateY(-100%); }
+        to { transform: translateY(400%); }
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
