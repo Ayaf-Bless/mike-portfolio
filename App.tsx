@@ -596,7 +596,7 @@ const App: React.FC = () => {
               <div className="space-y-10">
                 {[
                   { icon: <Mail size={16} />, label: 'Email', value: 'mikemuganza@gmail.com', href: 'mailto:mikemuganza@gmail.com' },
-                  { icon: <Linkedin size={16} />, label: 'Linkedin', value: 'muganza-ainda-271a05275', href: 'https://www.linkedin.com/in/muganza-ainda-271a05275?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+                  { icon: <Linkedin size={16} />, label: 'Linkedin', value: '@muganza-ainda-271a05275', href: 'https://www.linkedin.com/in/muganza-ainda-271a05275' },
                   { icon: <MapPin size={16} />, label: 'Base', value: 'Kampala, Uganda', href: null },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-5 group">
@@ -708,7 +708,7 @@ const App: React.FC = () => {
               <p className="text-white/40 text-[11px] font-light leading-relaxed">Strategic operations architecture and financial governance for the modern enterprise.</p>
               <div className="flex gap-4">
                 {[
-                  { icon: <Linkedin size={16} />, href: 'https://www.linkedin.com/in/muganza-ainda-271a05275?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+                  { icon: <Linkedin size={16} />, href: 'https://www.linkedin.com/in/muganza-ainda-271a05275' },
                   { icon: <Mail size={16} />, href: 'mailto:mikemuganza@gmail.com' }
                 ].map((social, i) => (
                   <a key={i} href={social.href} target={social.href.startsWith('http') ? "_blank" : undefined} className="w-8 h-8 border border-white/10 flex items-center justify-center text-white/30 hover:text-emerald hover:border-emerald transition-all group/icon">
