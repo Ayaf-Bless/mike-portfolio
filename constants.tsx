@@ -71,7 +71,7 @@ export const CASE_STUDIES: CaseStudyItem[] = [
     metrics: [
       { value: '85%', label: 'Faster Procurement' }
   ],
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.pexels.com/photos/30678212/pexels-photo-30678212.jpeg?auto=compress&cs=tinysrgb&w=1600'
   }
 ];
 
