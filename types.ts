@@ -1,4 +1,3 @@
-
 export interface ExperienceItem {
   role: string;
   company: string;
@@ -27,4 +26,12 @@ export interface CaseStudyItem {
   result: string;
   metrics: { value: string; label: string }[];
   image: string;
+}
+
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  location: string;
+  period: string;
+  details?: string;
 }
